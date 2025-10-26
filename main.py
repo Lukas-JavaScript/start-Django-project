@@ -1,5 +1,4 @@
 import os
-import shutil as sh
 import subprocess
 
 # === Eingaben ===
@@ -7,10 +6,6 @@ project_name = input("What's your project name?: ").strip()
 app_name = input("What's your app name?: ").strip()
 git_input = input("Do you want to initialize a git repository? (y/n) (default: y): ").lower().strip()
 lib = input("Wich librarys do you want to install?: ")
-
-# === Projektordner vorbereiten ===
-if os.path.exists(project_name):
-    sh.rmtree(project_name)
 
 os.mkdir(project_name)
 os.chdir(project_name)

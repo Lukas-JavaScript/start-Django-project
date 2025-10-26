@@ -6,6 +6,7 @@ import subprocess
 project_name = input("What's your project name?: ").strip()
 app_name = input("What's your app name?: ").strip()
 git_input = input("Do you want to initialize a git repository? (y/n) (default: y): ").lower().strip()
+lib = input("Wich librarys do you want to install?: ")
 
 # === Projektordner vorbereiten ===
 if os.path.exists(project_name):
@@ -27,7 +28,7 @@ venv_python = ".env\\Scripts\\python.exe" if os.name == "nt" else ".env/bin/pyth
 
 # === Pakete installieren ===
 subprocess.run([venv_python, "-m", "pip", "install", "--upgrade", "pip"])
-subprocess.run([venv_python, "-m", "pip", "install", "django", "django-cors-headers", "requests"])
+subprocess.run([venv_python, "-m", "pip", "install", "Django", *lib.split()])
 
 # === Django-Projekt erstellen ===
 subprocess.run([venv_python, "-m", "django", "startproject", project_name, "."])

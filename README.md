@@ -25,7 +25,7 @@ This Python script automates the creation of a new Django project including virt
 Run the script in a terminal:
 
 ```bash
-python setup_django_project.py
+python main.py
 ```
 You will be asked the following:
 

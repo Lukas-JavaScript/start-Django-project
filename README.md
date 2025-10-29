@@ -9,7 +9,8 @@ This Python script automates the creation of a new Django project including virt
 - Sets up a virtual environment (`.env`)  
 - Installs **Django** and additional libraries of your choice  
 - Initializes a **Git** repository (optional)  
-- Starts a fresh Django project in the current folder  
+- Starts a fresh Django project in the current folder 
+- Adds a .gitignore file and ignores this foders: a, test 
 
 ---
 

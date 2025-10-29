@@ -14,6 +14,9 @@ os.chdir(project_name)
 git = (git_input == '' or git_input == 'y')
 if git:
     subprocess.run(["git", "init"])
+    with open(".gitignore", "w") as f:
+        f.write("/a")
+        f.write("/test")
 
 # === Virtuelle Umgebung ===
 subprocess.run(["python", "-m", "venv", ".env"])

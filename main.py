@@ -15,8 +15,9 @@ git = (git_input == '' or git_input == 'y')
 if git:
     subprocess.run(["git", "init"])
     with open(".gitignore", "w") as f:
-        f.write("/a")
-        f.write("/test")
+        f.write("""/a
+/test
+""")
 
 # === Virtuelle Umgebung ===
 subprocess.run(["python", "-m", "venv", ".env"])

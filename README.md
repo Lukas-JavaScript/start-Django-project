@@ -1,10 +1,10 @@
-# 🧰 Django Project Auto-Setup Script
+# Django Project Auto-Setup Script
 
 This Python script automates the creation of a new Django project including virtual environment setup, package installation, and optional Git initialization.
 
 ---
 
-## 🚀 Features
+## Features
 - Automatically creates a clean project directory  
 - Sets up a virtual environment (`.env`)  
 - Installs **Django** and additional libraries of your choice  
@@ -14,14 +14,14 @@ This Python script automates the creation of a new Django project including virt
 
 ---
 
-## 📋 Requirements
+## Requirements
 - **Python 3.x** installed and available in PATH  
 - **pip** (comes with Python)
 - Optional: **Git** installed (for repository initialization)
 
 ---
 
-## ⚙️ Usage
+## Usage
 
 Run the script in a terminal:
 
@@ -50,7 +50,6 @@ Generates a new Django project in the same directory
 
 Performs the first Git commit (if enabled)
  
-#### 💡 Notes
+#### Notes
 You do not need to manually activate the virtual environment.
 The script runs all commands through the environment's Python executable directly.
-
